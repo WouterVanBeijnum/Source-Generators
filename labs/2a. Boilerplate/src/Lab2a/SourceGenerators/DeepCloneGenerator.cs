@@ -3,7 +3,7 @@
 namespace SourceGenerators;
 
 [Generator]
-public class DeepCloneGenerator : IIncrementalGenerator
+internal class DeepCloneGenerator : IIncrementalGenerator
 {
     public void Initialize(IncrementalGeneratorInitializationContext context)
     {

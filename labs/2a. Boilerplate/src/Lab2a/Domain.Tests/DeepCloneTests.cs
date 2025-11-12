@@ -14,6 +14,7 @@ public sealed class DeepCloneTests
             Manufacturer = "Airbus",
             Model = "A320",
             Seats = 150,
+            AisleSize = [3, 3],
             Engines =
             [
                 new AircraftEngine
@@ -35,6 +36,7 @@ public sealed class DeepCloneTests
         // Assert
         result.Should().NotBe(sut);
         result.Should().BeEquivalentTo(sut);
+        result.AisleSize.Should().NotBeSameAs(sut.AisleSize);
         result.Engines.Should().NotBeSameAs(sut.Engines);
     }
 
@@ -71,6 +73,7 @@ public sealed class DeepCloneTests
                 Manufacturer = "Boeing",
                 Model = "737",
                 Seats = 160,
+                AisleSize = [2, 2],
                 Engines =
                 [
                     new AircraftEngine
@@ -94,5 +97,7 @@ public sealed class DeepCloneTests
         result.Should().NotBe(sut);
         result.Should().BeEquivalentTo(sut);
         result.Aircraft.Should().NotBe(sut.Aircraft);
+        result.Aircraft.AisleSize.Should().NotBeSameAs(sut.Aircraft.AisleSize);
+        result.Aircraft.Engines.Should().NotBeSameAs(sut.Aircraft.Engines);
     }
 }
