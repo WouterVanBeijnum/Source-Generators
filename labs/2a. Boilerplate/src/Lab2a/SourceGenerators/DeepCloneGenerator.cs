@@ -1,6 +1,5 @@
 ﻿using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
@@ -36,10 +35,6 @@ internal class DeepCloneGenerator : IIncrementalGenerator
 
     private void GenerateDeepClonePartial(SourceProductionContext context, INamedTypeSymbol classSymbol)
     {
-        if (!Debugger.IsAttached)
-        {
-            //Debugger.Launch();
-        }
         var namespaceDeclaration = classSymbol.ContainingNamespace.IsGlobalNamespace
             ? ""
             : $"namespace {classSymbol.ContainingNamespace.ToDisplayString()};\n";
