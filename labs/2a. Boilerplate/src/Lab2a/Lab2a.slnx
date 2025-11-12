@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Domain.Tests/Domain.Tests.csproj" Id="0f2db8b4-0a29-4b7a-afbc-6f462d84b693" />
+  <Project Path="Domain/Domain.csproj" Id="b294a43a-1a6b-44a5-8bb5-5edb4bb6dcb5" />
+  <Project Path="SourceGenerators/SourceGenerators.csproj" />
+</Solution>
