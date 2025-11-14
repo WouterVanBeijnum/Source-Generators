@@ -1,0 +1,58 @@
+[
+    {
+        "SchemaId": "31515505-e624-4c6c-9ed1-f51453579aac",
+        "Domain": "Aircraft",
+        "Type": "Aircraft",
+        "Properties": [
+            {
+                "Name": "Id",
+                "Type": "Guid",
+                "Required": true
+            },
+            {
+                "Name": "Manufacturer",
+                "Type": "string",
+                "Required": true
+            },
+            {
+                "Name": "Model",
+                "Type": "string",
+                "Required": true
+            },
+            {
+                "SchemaId": "74519c69-39ab-487c-92d7-e67147cd1e4b",
+                "Name": "Seats",
+                "Type": "int",
+                "Required": false
+            },
+            {
+                "Name": "Engines",
+                "Type": "ICollection<Components.AircraftEngine>",
+                "Required": true
+            }
+        ]
+    },
+    {
+        "SchemaId": "3f0c6ac0-c86e-4c73-9ed5-a4a287e38909",
+        "Domain": "Components",
+        "Type": "AircraftEngine",
+        "Properties": [
+            {
+                "Name": "Id",
+                "Type": "Guid",
+                "Required": true
+            },
+            {
+                "Name": "Manufacturer",
+                "Type": "string",
+                "Required": true
+            },
+            {
+                "SchemaId": "1b7c9818-82cd-4812-8b2a-018ae91cb8f5",
+                "Name": "Power",
+                "Type": "int?",
+                "Required": false
+            }
+        ]
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "Domain": "Maintenance",
+        "Type": "RegisterForMaintenanceCommand",
+        "Properties": [
+            {
+                "Name": "AircraftToService",
+                "Type": "Aircraft.Aircraft",
+                "Required": true
+            }
+        ]
+    }
+]
