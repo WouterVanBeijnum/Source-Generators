@@ -1,4 +1,5 @@
 ﻿using Microsoft.CodeAnalysis;
+using System;
 
 namespace SourceGenerators;
 
@@ -7,6 +8,6 @@ public class SchemaSourceGenerator : IIncrementalGenerator
 {
     public void Initialize(IncrementalGeneratorInitializationContext context)
     {
-        throw new System.NotImplementedException();
+        throw new NotImplementedException();
     }
 }

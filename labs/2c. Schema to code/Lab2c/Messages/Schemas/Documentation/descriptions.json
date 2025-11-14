@@ -1,22 +1,22 @@
 [
-    {
-        "ReferenceSchemaId": "31515505-e624-4c6c-9ed1-f51453579aac",
-        "Description": "Represents any flying machine."
-    },
-    {
-        "ReferenceSchemaId": "7ed82149-cc60-4fd1-9c00-b0b183c5dcd0",
-        "Description": "Sets the amount of thrust. Use negative values to use reverse thrust."
-    },
-    {
-        "ReferenceSchemaId": "74519c69-39ab-487c-92d7-e67147cd1e4b",
-        "Description": "Only passenger seats, crew seats are excluded."
-    },
-    {
-        "ReferenceSchemaId": "9c309a56-e547-4b15-ab5e-4b8346a33264",
-        "Description": "Turns on or off the engine. The engine can only be shut down when the thrust is 0, or when it explodes..."
-    },
-    {
-        "ReferenceSchemaId": "1b7c9818-82cd-4812-8b2a-018ae91cb8f5",
-        "Description": "Amount of generated thrust. Null when turned off. Negative when reverse thrust is active."
-    }
+  {
+    "ReferenceSchemaId": "31515505-e624-4c6c-9ed1-f51453579aac",
+    "Description": "Represents any flying machine."
+  },
+  {
+    "ReferenceSchemaId": "7ed82149-cc60-4fd1-9c00-b0b183c5dcd0",
+    "Description": "Sets the amount of thrust. Use negative values to use reverse thrust."
+  },
+  {
+    "ReferenceSchemaId": "74519c69-39ab-487c-92d7-e67147cd1e4b",
+    "Description": "Only passenger seats, crew seats are excluded."
+  },
+  {
+    "ReferenceSchemaId": "9c309a56-e547-4b15-ab5e-4b8346a33264",
+    "Description": "Turns on or off the engine. The engine can only be shut down when the thrust is 0, or automatically when it explodes..."
+  },
+  {
+    "ReferenceSchemaId": "1b7c9818-82cd-4812-8b2a-018ae91cb8f5",
+    "Description": "Amount of generated thrust. Null when turned off. Negative when reverse thrust is active."
+  }
 ]

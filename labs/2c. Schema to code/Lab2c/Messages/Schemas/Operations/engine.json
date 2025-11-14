@@ -1,36 +1,36 @@
 [
-    {
-        "SchemaId": "7ed82149-cc60-4fd1-9c00-b0b183c5dcd0",
-        "Domain": "Contoso.Airport.Aircraft.Operations.Engine",
-        "Type": "SetThrustCommand",
-        "Properties": [
-            {
-                "Name": "EngineId",
-                "Type": "Guid",
-                "Required": true
-            },
-            {
-                "Name": "Thrust",
-                "Type": "int",
-                "Required": true
-            }
-        ]
-    },
-    {
-        "SchemaId": "9c309a56-e547-4b15-ab5e-4b8346a33264",
-        "Domain": "Contoso.Airport.Aircraft.Operations.Engine",
-        "Type": "PowerEngineCommand",
-        "Properties": [
-            {
-                "Name": "EngineId",
-                "Type": "Guid",
-                "Required": true
-            },
-            {
-                "Name": "Enabled",
-                "Type": "bool",
-                "Required": true
-            }
-        ]
-    }
+  {
+    "SchemaId": "7ed82149-cc60-4fd1-9c00-b0b183c5dcd0",
+    "Domain": "Aircraft.Operations.Engine",
+    "Type": "SetThrustCommand",
+    "Properties": [
+      {
+        "Name": "Engine",
+        "Type": "Components.AircraftEngine",
+        "Required": true
+      },
+      {
+        "Name": "Thrust",
+        "Type": "int",
+        "Required": true
+      }
+    ]
+  },
+  {
+    "SchemaId": "9c309a56-e547-4b15-ab5e-4b8346a33264",
+    "Domain": "Aircraft.Operations.Engine",
+    "Type": "PowerEngineCommand",
+    "Properties": [
+      {
+        "Name": "Engine",
+        "Type": "Components.AircraftEngine",
+        "Required": true
+      },
+      {
+        "Name": "Enabled",
+        "Type": "bool",
+        "Required": true
+      }
+    ]
+  }
 ]

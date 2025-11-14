@@ -1,17 +1,12 @@
 [
     {
-        "Domain": "Contoso.Airport.Maintenance",
+        "Domain": "Maintenance",
         "Type": "RegisterForMaintenanceCommand",
         "Properties": [
             {
                 "Name": "AircraftToService",
-                "Type": "Aircraft[]",
-                "Required": false
-            },
-            {
-                "Name": "EnginesToService",
-                "Type": "AircraftEngine[]",
-                "Required": false
+                "Type": "Aircraft.Aircraft",
+                "Required": true
             }
         ]
     }

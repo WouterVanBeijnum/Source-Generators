@@ -1,7 +1,7 @@
 [
     {
         "SchemaId": "31515505-e624-4c6c-9ed1-f51453579aac",
-        "Domain": "Contoso.Airport.Aircraft",
+        "Domain": "Aircraft",
         "Type": "Aircraft",
         "Properties": [
             {
@@ -27,14 +27,14 @@
             },
             {
                 "Name": "Engines",
-                "Type": "ICollection<AircraftEngine>",
+                "Type": "ICollection<Components.AircraftEngine>",
                 "Required": true
             }
         ]
     },
     {
         "SchemaId": "3f0c6ac0-c86e-4c73-9ed5-a4a287e38909",
-        "Domain": "Contoso.Airport.Components",
+        "Domain": "Components",
         "Type": "AircraftEngine",
         "Properties": [
             {
