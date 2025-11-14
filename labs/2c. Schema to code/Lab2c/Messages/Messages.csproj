@@ -12,7 +12,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<AdditionalFiles Include="Schemas\*.json" />
+		<AdditionalFiles Include="Schemas\**\*.json" />
 	</ItemGroup>
 
 </Project>
