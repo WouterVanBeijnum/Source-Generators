@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="../../../../README.md" />
+    <File Path="../../../1. Hello source generator/1-hello-source-generator.md" />
+    <File Path="../../../1. Hello source generator/src/Lab1/Lab1.slnx" />
+    <File Path="../../2b-debugging-and-diagnostics.md" />
+	<File Path="../../../2a. Boilerplate/2a-boilerplate.md" />
+	<File Path="../../../2a. Boilerplate/src/Lab2a/Lab2a.slnx" />
+	<File Path="../../../2c. Schema to code/2c-schema-to-code.md" />
+	<File Path="../../../2c. Schema to code/src/Lab2c/Lab2c.slnx" />
+  </Folder>
+  <Project Path="Application/Application.csproj" />
+  <Project Path="SourceGenerators.Tests/SourceGenerators.Tests.csproj" Id="0140deae-4bfe-498e-a386-2cc19b606f27" />
+  <Project Path="SourceGenerators/SourceGenerators.csproj" />
+</Solution>

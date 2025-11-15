@@ -2,7 +2,7 @@
 
 **Objective**: This exercise demonstrates how to transform external schema definitions into strongly-typed C# models using source generators with incremental generation pipelines.
 
-## 1. Analyze the Existing Implementation
+## 1. Analyze the existing implementation
 
 1. Open the provided solution and examine the `Messages` project structure.
 
@@ -15,7 +15,7 @@
 
 4. Currently, the application won't compile because the schema-based models haven't been generated yet.
 
-## 2. Implement the Source Generator
+## 2. Implement the source generator
 
 ### 2.1. Understanding the IncrementalSourceGenerator pipeline
 
@@ -53,7 +53,7 @@ In order to create the C# classes the class schemas and the documentation schema
 2. Collect your documentation values provider.
 3. Combine your model and operations provider with your documentation provider.
 
-### 2.5. Generate C# Classes
+### 2.5. Generate C# classes
 
 Implement the code generation logic:
 
@@ -77,7 +77,7 @@ private static void GenerateClassFromSchema(SourceProductionContext context, (Cl
 2. Verify that generated files appear in the project dependencies.
 3. Run the application to ensure the generated classes work correctly.
 
-## 3. Test Generator Resilience
+## 3. Test generator resilience
 
 Modify the schema files to verify the source generator's incremental capabilities:
 
@@ -96,7 +96,7 @@ If you complete the basic implementation, consider these enhancements:
 2. **Schema validation**: Add validation to ensure schema files follow the expected structure.
 3. **Diagnostics**: Emit compiler warnings or errors for invalid schema files.
 
-## Learning Outcomes
+## Learning outcomes
 
 After completing this lab, you should understand:
 
