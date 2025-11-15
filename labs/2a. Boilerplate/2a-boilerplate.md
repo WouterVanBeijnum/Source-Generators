@@ -2,17 +2,14 @@
 
 **Objective**: This exercise demonstrates how to replace repetitive boilerplate code with automated source generation using marker attributes.
 
-## 1. Analyze the Existing Implementation
+## 1. Analyze the existing implementation
 
 1. Open the provided solution and run the tests to establish a baseline.
-
 2. Examine the `Domain` project models. Each model contains a `DeepClone` method that returns a complete copy of the object, including nested objects. The implementation ensures value equality while creating entirely new object references.
-
 3. Review the various `DeepClone` implementations across different classes, noting their differences.
-
 4. Once familiar with the implementations, delete all existing `DeepClone` methods to prepare for source generation.
 
-## 2. Implement the Source Generator
+## 2. Implement the source generator
 
 ### 2.1. Creating a generator
 
@@ -62,3 +59,12 @@ Modify the domain model to verify the source generator's incremental regeneratio
 3. Observe how the generated `DeepClone` methods automatically update to reflect domain changes.
 
 This demonstrates the primary advantage of source generators: automatic adaptation to code changes without manual intervention.
+
+## Learning outcomes
+
+After completing this lab, you should understand:
+
+- How to use the syntax provider to locate attributes.
+- How to output static content.
+- How to output code based on custom logic.
+- How source generators provide consistency and are able to reduce the amount of boilerplate code.

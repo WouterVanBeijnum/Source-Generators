@@ -45,7 +45,7 @@ Install the following NuGet packages:
 
 **Important:** Select package versions that are compatible with both the target language version and .NET framework version of your application. Refer to the [Roslyn GitHub documentation](https://github.com/dotnet/roslyn/blob/main/docs/wiki/NuGet-packages.md) for detailed versioning guidelines.
 
-### 1.6. Project Reference Configuration
+### 1.6. Project reference configuration
 
 In the Application project, add a project reference to the SourceGenerators project with the following constraints:
 
@@ -54,7 +54,7 @@ In the Application project, add a project reference to the SourceGenerators proj
 
 Execute a final build to verify the configuration is correct and all components are functioning as expected.
 
-## 2. Implement the Source Generator
+## 2. Implement the source generator
 
 ### 2.1. Generator Implementation
 
@@ -70,9 +70,18 @@ internal class MessageProvider : IMessageProvider
 }
 ```
 
-### 2.2. Verification and Testing
+### 2.2. Verification and testing
 
-1. Build the solution and verify that the generated file has been successfully added to the application project
-2. Execute the application to test the implementation
+1. Build the solution.
+2. Verify that the generated file has been successfully added to the application project. The generated files can be found in the `Application` project. Navigate to Dependencies > Analyzers > SourceGenerators > your generator.
+3. Execute the application to test the implementation.
 
 Upon successful completion of all steps, the application should greet you with output from your newly created source generator, demonstrating the successful integration of source generation into your development workflow.
+
+## Learning outcomes
+
+After completing this lab, you should understand:
+
+- How a source generator project is used in applications.
+- What packages are required to start developing source generators.
+- Where you can find and view generated files.
